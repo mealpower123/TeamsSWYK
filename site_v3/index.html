@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>トップ｜TEAM SWYK（チーム さわやか）</title>
+<meta name="description" content="人とつながる。世界が広がる。TEAM SWYK（チーム さわやか）の公式サイト。">
+<style>
+:root{--navy:#16294d;--navy2:#1f3f73;--yellow:#ffc82e;--yellow2:#ffd95e;--cream:#fffbeb;--ink:#2b2b2b;--line:#e8e2d2}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;color:var(--ink);background:#fff;line-height:1.85}
+img{max-width:100%;display:block}
+a{color:var(--navy2)}
+main{max-width:1080px;margin:0 auto;padding:0 16px 64px}
+section{margin-top:54px;scroll-margin-top:96px}
+h2.sec{color:var(--navy);font-size:clamp(22px,4.5vw,30px);text-align:center;margin:0 0 6px}
+h2.sec .en{display:block;font-size:12px;letter-spacing:.35em;color:#b3941f;font-weight:800}
+h3.sub{color:var(--navy);font-size:19px;margin:26px 0 8px}
+.lead{text-align:center;color:#444;max-width:780px;margin:8px auto 22px}
+.lead-l{color:#444;max-width:820px;margin:8px 0 16px}
+header.site{position:sticky;top:0;z-index:20;background:#fff;border-bottom:2px solid var(--yellow);box-shadow:0 2px 12px rgba(21,42,78,.08)}
+header.site .in{max-width:1080px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+header.site a.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+header.site img.logo{width:40px;height:40px;object-fit:contain}
+header.site .name{font-weight:900;color:var(--navy);font-size:17px;letter-spacing:.03em;line-height:1.15}
+header.site .name small{display:block;font-size:10px;color:#8a7a3a;letter-spacing:.18em}
+header.site nav.main{margin-left:auto;display:flex;gap:13px;font-size:13px;font-weight:700;flex-wrap:wrap}
+header.site nav.main a{color:var(--navy);text-decoration:none}
+header.site nav.main a.cta{background:var(--navy);color:#fff;border-radius:999px;padding:3px 12px}
+.lang{display:flex;gap:6px;margin-left:8px}
+.lang a{font-size:12px;font-weight:800;text-decoration:none;border:1.5px solid var(--navy);color:var(--navy);border-radius:999px;padding:2px 10px}
+.lang a.on{background:var(--yellow);border-color:var(--yellow)}
+details.mnav{display:none;width:100%}
+details.mnav summary{cursor:pointer;font-weight:800;color:var(--navy);padding:6px 0;list-style:none}
+details.mnav nav{display:grid;gap:2px;padding:6px 0 10px}
+details.mnav nav a{color:var(--navy);text-decoration:none;font-weight:700;padding:7px 10px;border-radius:8px;background:var(--cream)}
+@media(max-width:900px){header.site nav.main{display:none}details.mnav{display:block}.lang{margin-left:auto}}
+.hero{margin:0 -16px;background:var(--cream);padding:26px 16px 30px;border-radius:0 0 26px 26px}
+.hero .photo{max-width:880px;margin:0 auto;border-radius:18px;overflow:hidden;box-shadow:0 10px 28px rgba(21,42,78,.20)}
+.hero .cap{max-width:880px;margin:8px auto 0;font-size:12.5px;color:#6b6136;text-align:right}
+.hero h1{color:var(--navy);text-align:center;font-size:clamp(30px,7vw,52px);margin:20px 0 6px;font-weight:900;line-height:1.35}
+.hero .sub{text-align:center;color:#4a3f14;font-weight:600;max-width:760px;margin:0 auto}
+.entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:20px}
+.entry{background:#fff;border:2px solid var(--yellow);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink)}
+.entry b{color:var(--navy);font-size:16.5px;display:block;margin-bottom:4px}
+.entry span{font-size:13.5px;color:#555}
+.pagehead{margin:0 -16px;background:linear-gradient(180deg,#fff3c4,var(--yellow2));padding:34px 16px 24px;border-radius:0 0 24px 24px;text-align:center}
+.pagehead h1{color:var(--navy);margin:0;font-size:clamp(25px,5.5vw,38px)}
+.pagehead p{color:#4a3f14;font-weight:600;margin:6px auto 0;max-width:740px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 3px 10px rgba(21,42,78,.05)}
+.card h3{color:var(--navy);margin:0 0 8px;font-size:18px}
+.card p{margin:0 0 12px;font-size:14.5px;color:#444}
+.card .more{font-weight:800;text-decoration:none}
+.card img{border-radius:12px;margin-bottom:12px;width:100%;height:auto}
+.st{display:inline-block;font-size:11.5px;font-weight:800;border-radius:999px;padding:1px 10px;margin-bottom:8px}
+.st-now{background:var(--yellow);color:var(--navy)}
+.st-done{background:#e5e7eb;color:#4b5563}
+.values{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px}
+.values .v{background:var(--cream);border:2px solid var(--yellow);border-radius:14px;padding:16px;text-align:center}
+.values .v b{font-size:26px;color:var(--navy);display:block}
+.values .v span{font-weight:800;color:var(--navy);display:block}
+.photo{border-radius:16px;overflow:hidden;margin:22px auto;max-width:820px;box-shadow:0 8px 22px rgba(21,42,78,.15)}
+.photo img{width:100%;height:auto}
+table.kv{width:100%;border-collapse:collapse;background:#fff;font-size:14.5px}
+table.kv th,table.kv td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.kv th{background:#fff7dd;color:var(--navy);white-space:nowrap;width:130px}
+ul.tight{margin:6px 0;padding-left:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:13px}
+.chips a{background:#fff;border:1.5px solid var(--navy);border-radius:999px;padding:4px 14px;font-size:13.5px;font-weight:800;text-decoration:none;color:var(--navy)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+.gallery figure{margin:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid var(--line)}
+.gallery img{width:100%;height:auto}
+.gallery figcaption{font-size:12.5px;color:#555;padding:6px 10px}
+.btn{display:inline-block;background:var(--navy);color:#fff !important;text-decoration:none;font-weight:800;border-radius:999px;padding:12px 26px}
+.btn.y{background:var(--yellow);color:var(--navy) !important}
+.btn.line-b{background:#06c755;color:#fff !important}
+.btn.wa{background:#25d366;color:#1c4d2e !important}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;counter-reset:step}
+.flow .f{background:var(--cream);border-radius:14px;padding:16px}
+.flow .f b{color:var(--navy);display:block;margin-bottom:4px}
+.flow .f p{margin:0;font-size:14px;color:#444}
+.diagram{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:stretch;margin-top:16px}
+.diagram .node{background:#fff;border:2px solid var(--navy);color:var(--navy);font-weight:800;border-radius:14px;padding:12px 16px;text-align:center;min-width:130px}
+.diagram .node small{display:block;font-weight:600;color:#555;font-size:12px}
+.diagram .arr{align-self:center;color:#b3941f;font-weight:900;font-size:20px}
+.cycle{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:16px}
+.cycle .c{background:#fff;border:1px solid var(--line);border-top:5px solid var(--yellow);border-radius:12px;padding:14px}
+.cycle .c b{color:var(--navy)}
+.timeline{max-width:780px;margin:0 auto}
+.timeline .t{display:flex;gap:14px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.timeline .y{flex:0 0 118px;font-weight:800;color:var(--navy)}
+footer.site{background:var(--navy);color:#dfe6f2;margin-top:70px}
+footer.site .in{max-width:1080px;margin:0 auto;padding:28px 16px;font-size:13px}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+footer.site a{color:#ffe9a8;text-decoration:none}
+footer.site .name{color:#fff;font-weight:900;font-size:17px}
+footer.site ul{list-style:none;margin:6px 0;padding:0}
+footer.site li{margin:4px 0}
+.back{display:inline-block;margin-top:26px;font-weight:700;text-decoration:none}
+.quote{background:#fff;border-left:5px solid #f080a8;border-radius:0 14px 14px 0;padding:16px 18px;max-width:820px;margin:18px auto;font-size:15px}
+.note{text-align:center;color:#666;font-size:13.5px;margin-top:14px}
+@media(max-width:640px){.timeline .y{flex-basis:92px}table.kv th{width:96px}}
+</style></head>
+<body><header class="site"><div class="in">
+<a class="brand" href="index.html"><img class="logo" src="img/logo.png" alt="TEAM SWYK ロゴ">
+<span class="name">TEAM SWYK<small>チーム さわやか</small></span></a>
+<nav class="main"><a href="about.html">TEAMSWYKについて</a><a href="activities.html">活動紹介</a><a href="locations.html">拠点・教室</a><a href="programs.html">参加・プログラム</a><a href="work.html">講演・仕事の依頼</a><a href="global.html">海外活動・Brasil</a><a href="news.html">お知らせ</a><a class="cta" href="contact.html">お問い合わせ</a></nav>
+<div class="lang"><a class="on" href="index.html">日本語</a><a href="pt.html">Português</a></div>
+<details class="mnav"><summary>☰ メニュー</summary><nav><a href="about.html">TEAMSWYKについて</a><a href="activities.html">活動紹介</a><a href="locations.html">拠点・教室</a><a href="programs.html">参加・プログラム</a><a href="work.html">講演・仕事の依頼</a><a href="global.html">海外活動・Brasil</a><a href="news.html">お知らせ</a><a href="contact.html">お問い合わせ</a><a href="pt.html">Português（Para os brasileiros）</a></nav></details>
+</div></header><main>
+<div class="hero">
+<div class="photo"><img src="img/hero.jpg" alt="TEAMSWYK Conductor 廣瀬拓哉と、ブラジルの子どもたち"></div>
+<p class="cap">TEAMSWYK Conductor 廣瀬拓哉と、ブラジルの子どもたち</p>
+<h1>人とつながる。世界が広がる。</h1>
+<p class="sub">TEAM SWYK（チーム さわやか）は、スポーツ・教育・地域交流・国際交流を通じて、人と人がつながり、新しい経験・学び・挑戦が生まれる活動です。</p>
+<div class="entries">
+<a class="entry" href="about.html"><b>TEAMSWYKを知る</b><span>理念・設立背景・コンダクター紹介</span></a>
+<a class="entry" href="programs.html"><b>活動に参加する</b><span>参加できるプログラムのご案内</span></a>
+<a class="entry" href="work.html"><b>講演・仕事を依頼する</b><span>学校園・自治体・企業・団体の方へ</span></a>
+<a class="entry" href="global.html"><b>Brasil・海外</b><span>国際交流とブラジル向けサービスのご案内</span></a>
+</div>
+</div>
+
+<section>
+<h2 class="sec"><span class="en">PHILOSOPHY</span>大切にしている4つの考え方</h2>
+<p class="lead">TEAM SWYKの名前は、この4つの言葉から生まれました。子ども、学生、大人がそれぞれの得意を活かして関わり、学んだ人が支える側にもなっていく。その循環を大切にしています。</p>
+
+<div class="values">
+<div class="v"><b>支え合う</b>関わる人と支え合う</div>
+<div class="v"><b>分かり合う</b>それぞれの個性を知り、認め合う</div>
+<div class="v"><b>やりきる</b>途中であきらめない</div>
+<div class="v"><b>感動する</b>できた感動を全員で味わう</div>
+</div>
+<p style="text-align:center;margin-top:16px"><a href="about.html" style="font-weight:800">理念について詳しく →</a></p>
+</section>
+
+<section>
+<h2 class="sec"><span class="en">ACTIVITIES</span>活動と拠点</h2>
+<p class="lead">国内の教育現場から、南米のグラウンドまで。詳しくは各ページでご紹介しています。</p>
+<div class="cards">
+<div class="card"><h3>活動紹介</h3><p>オンライン職業講話、放課後レッスン、ティーボール、国際交流、日本語教育、コミュニティなど、活動をまとめてご紹介します。</p><a class="more" href="activities.html">活動を見る →</a></div>
+<div class="card"><h3>拠点・教室紹介</h3><p>TEAMSWYK JAPAN、奈良教室、新宮校、Brasil、松井ヶ丘保育園ティーボールスクールの5つの拠点をご紹介します。</p><a class="more" href="locations.html">拠点・教室を見る →</a></div>
+<div class="card"><h3>海外活動・Brasil</h3><p>JICA海外協力隊としてのブラジル派遣をはじめ、南米での野球指導や国際交流に取り組んできました。</p><a class="more" href="global.html">海外活動を見る →</a></div>
+</div>
+</section>
+
+<section>
+<h2 class="sec"><span class="en">JOIN / WORK</span>参加とご依頼</h2>
+<div class="cards">
+<div class="card"><h3>参加できるプログラム</h3><p>ティーボールスクール、野球個別指導、日本語教育・学習支援、コミュニティイベントへの参加をご案内します。</p><a class="more" href="programs.html">プログラムを見る →</a></div>
+<div class="card"><h3>講演・仕事のご依頼</h3><p>学校園での講演、国際理解教育、野球指導、教育プログラムの企画運営など、学校園・自治体・企業・団体からのご相談に対応します。</p><a class="more" href="work.html">依頼できる内容を見る →</a></div>
+</div>
+</section>
+
+<section>
+<h2 class="sec"><span class="en">NEWS &amp; CONTACT</span>お知らせ・お問い合わせ</h2>
+<p class="lead">活動の様子や募集のお知らせは、お知らせページで発信していきます。ご相談はLINE・WhatsApp・メールからお気軽にどうぞ。</p>
+<p style="text-align:center"><a class="btn" href="news.html">お知らせを見る</a></p>
+<div class="btnrow"><a class="btn y" href="contact.html">相談・問い合わせについて</a><a class="btn line-b" href="https://line.me/ti/p/22-lX5DSVm" target="_blank" rel="noopener">LINEで相談する</a><a class="btn wa" href="https://wa.me/817023172503?s=p" target="_blank" rel="noopener">WhatsAppで相談する</a><a class="btn" href="mailto:hirosetakuya0225@gmail.com?subject=%E3%80%90TEAM%20SWYK%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで相談する</a></div>
+</section>
+</main><footer class="site"><div class="in">
+<div class="cols">
+<div><div class="name">TEAM SWYK（チーム さわやか）</div>
+<p>人とつながる。世界が広がる。<br>TEAMSWYK Conductor：廣瀬拓哉</p></div>
+<div><b style="color:#fff">メニュー</b><ul>
+<li><a href="about.html">TEAMSWYKについて</a></li>
+<li><a href="activities.html">活動紹介</a></li>
+<li><a href="locations.html">拠点・教室紹介</a></li>
+<li><a href="programs.html">参加・プログラム</a></li>
+<li><a href="work.html">講演・仕事のご依頼</a></li>
+<li><a href="news.html">お知らせ</a></li>
+</ul></div>
+<div><b style="color:#fff">お問い合わせ</b><ul>
+<li><a href="contact.html">お問い合わせについて</a></li>
+<li><a href="https://line.me/ti/p/22-lX5DSVm" target="_blank" rel="noopener">LINEで相談する</a></li>
+<li><a href="https://wa.me/817023172503?s=p" target="_blank" rel="noopener">WhatsAppで相談する</a></li>
+<li><a href="mailto:hirosetakuya0225@gmail.com?subject=%E3%80%90TEAM%20SWYK%E3%80%91%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで相談する</a></li>
+</ul></div>
+<div><b style="color:#fff">その他</b><ul>
+<li><a href="pt.html">Português（Para os brasileiros）</a></li>
+<li><a href="privacy.html">プライバシーポリシー</a></li>
+</ul></div>
+</div>
+<p style="margin-top:18px">© 2026 TEAM SWYK</p>
+</div></footer></body></html>
